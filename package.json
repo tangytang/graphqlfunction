@@ -14,5 +14,11 @@
     "@types/node": "16.x",
     "azure-functions-core-tools": "^4.x",
     "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "@microsoft/microsoft-graph-client": "^3.0.2",
+    "axios": "^0.27.2",
+    "isomorphic-fetch": "^3.0.0",
+    "request": "^2.88.2"
   }
 }
