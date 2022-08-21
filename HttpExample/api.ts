@@ -1,31 +1,16 @@
-import {
-  AuthProvider,
-  AuthProviderCallback,
-  Client,
-  Options,
-} from "@microsoft/microsoft-graph-client";
-import { accessToken } from "./const";
 import { messageUrl } from "./urls";
-
-const authProvider: AuthProvider = (callback: AuthProviderCallback) => {
-  callback(Error, accessToken);
-};
-const options: Options = {
-  authProvider,
-};
-const client = Client.init(options);
 
 const countReactions = (reactions) =>
   reactions.reduce((sum, reaction) => sum + 1, 0);
 
-export const getMe = async () => {
+export const getMe = async (client: any) => {
   const me = await client.api("/me").get();
 
   return me;
 };
 
-export const getMessage = async () => {
-  const me = await getMe();
+export const getMessage = async (client: any) => {
+  const me = await getMe(client);
   const myId = me.id;
   const messageData = await client.api(messageUrl).get();
 
