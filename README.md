@@ -1,3 +1,8 @@
+## Description
+This is an azure function that queries the Graphql Teams API endpoint. It consolidates the reaction data, and is triggered via a HTTP request.
+
+
+## Running the Projects
 Step 1: 
 - f5 to run build locally
 
