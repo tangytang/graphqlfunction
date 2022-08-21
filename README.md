@@ -1,6 +1,9 @@
 ## Description
 This is an azure function that queries the Graphql Teams API endpoint. It consolidates the reaction data, and is triggered via a HTTP request.
 
+## Admin Credentials
+papajohns@2c8k7f.onmicrosoft.com
+JKiqfsitY9HmEva
 
 ## Running the Projects
 Step 1: 
